@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/encabezado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Que te gustaria buscar?"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Botones circulares con iconos -->
+    <LinearLayout
+        android:id="@+id/botones_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encabezado"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Botón Home -->
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/btnHome"
+            android:background="@drawable/circle_button_background"
+            android:src="@drawable/home"
+            android:scaleType="fitXY"
+            android:padding="16dp"
+            android:layout_marginEnd="30dp"/>
+
+        <!-- Botón Hoteles -->
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/btnHoteles"
+            android:background="@drawable/circle_button_background"
+            android:src="@drawable/hotel"
+            android:scaleType="fitXY"
+            android:padding="16dp"
+            android:layout_marginEnd="30dp"/>
+
+        <!-- Botón Lugares -->
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/btnLugares"
+            android:background="@drawable/circle_button_background"
+            android:src="@drawable/lugar"
+            android:scaleType="fitXY"
+            android:padding="16dp"
+            android:layout_marginEnd="30dp"/>
+
+        <!-- Botón Vuelos -->
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/btnVuelos"
+            android:background="@drawable/circle_button_background"
+            android:src="@drawable/vuelo"
+            android:scaleType="fitXY"
+            android:padding="16dp"
+            android:layout_marginEnd="3dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titulo_destinos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mejores destinos"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/botones_layout" />
+
+    <!-- HorizontalScrollView para las imágenes -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo_destinos"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:orientation="horizontal">
+
+            <!-- Botón 1 con imagen y texto -->
+            <FrameLayout
+                android:layout_width="290dp"
+                android:layout_height="280dp"
+                android:layout_margin="0dp">
+
+            <!-- Imagen 1 -->
+            <ImageButton
+                android:id="@+id/btnImagen1"
+                android:layout_width="270dp"
+                android:layout_height="280dp"
+                android:src="@drawable/paris1"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_border"
+                android:clipToOutline="true" />
+
+                <!-- TextView para el texto sobre el botón de imagen -->
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="160dp"
+                    android:text="Paris, Francia"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_gravity="top" />
+
+            </FrameLayout>
+
+            <!-- Botón 2 con imagen y texto -->
+            <FrameLayout
+                android:layout_width="290dp"
+                android:layout_height="280dp"
+                android:layout_margin="0dp">
+
+            <!-- Imagen 2 -->
+            <ImageButton
+                android:id="@+id/btnImagen2"
+                android:layout_width="270dp"
+                android:layout_height="280dp"
+                android:src="@drawable/roma1"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_border"
+                android:clipToOutline="true" />
+
+                <!-- TextView para el texto sobre el botón de imagen -->
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="160dp"
+                    android:text="Roma, Italia"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_gravity="top" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="290dp"
+                android:layout_height="280dp"
+                android:layout_margin="0dp">
+
+            <!-- Imagen 3 -->
+            <ImageButton
+                android:id="@+id/btnImagen3"
+                android:layout_width="270dp"
+                android:layout_height="280dp"
+                android:src="@drawable/tokyo"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_border"
+                android:clipToOutline="true" />
+
+                <!-- TextView para el texto sobre el botón de imagen -->
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="160dp"
+                    android:text="Tokyo, Japon"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_gravity="top" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="290dp"
+                android:layout_height="280dp"
+                android:layout_margin="0dp">
+
+            <!-- Imagen 4 -->
+            <ImageButton
+                android:id="@+id/btnImagen4"
+                android:layout_width="270dp"
+                android:layout_height="280dp"
+                android:src="@drawable/santorini"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_border"
+                android:clipToOutline="true" />
+
+                <!-- TextView para el texto sobre el botón de imagen -->
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="140dp"
+                    android:text="Santorini, Grecia"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_gravity="top" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="290dp"
+                android:layout_height="280dp"
+                android:layout_margin="0dp">
+
+            <!-- Imagen 5 -->
+            <ImageButton
+                android:id="@+id/btnImagen5"
+                android:layout_width="270dp"
+                android:layout_height="280dp"
+                android:src="@drawable/berlin"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_border"
+                android:clipToOutline="true" />
+
+                <!-- TextView para el texto sobre el botón de imagen -->
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="140dp"
+                    android:text="Berlin, Alemania"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_gravity="top" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destino Destacado"
+        android:textSize="27sp"
+        android:layout_marginTop="570dp" />
+
+    <!-- Imagen que es un botón -->
+
+    <ImageButton
+        android:id="@+id/btnImagen6"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/dubai"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>
+</ScrollView>

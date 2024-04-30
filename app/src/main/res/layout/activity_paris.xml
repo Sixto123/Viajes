@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ImageView para la foto en la parte superior -->
+    <ImageView
+        android:id="@+id/fotogrande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paris1"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Foto Pequeña y Texto con Botón -->
+    <ImageView
+        android:id="@+id/fotores"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/fotogrande"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/resparis" />
+
+    <TextView
+        android:id="@+id/textoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fotores"
+        android:layout_alignTop="@id/fotores"
+        android:layout_marginStart="8dp"
+        android:text="Restaurante Boutari\nHorario:7:00am-10:00pm\nValoracion:★★★★★"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/botonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotores"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="-40dp"
+        android:text="Ver Detalles" />
+
+    <ImageView
+        android:id="@+id/fotobar"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/fotores"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/barparis" />
+
+    <TextView
+        android:id="@+id/textoInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fotobar"
+        android:layout_alignTop="@id/fotobar"
+        android:layout_marginStart="8dp"
+        android:text="Bar Buddha\nHorario:3:00pm-3:00am\nValoracion:★★★★★"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/botonInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotobar"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="-40dp"
+        android:text="Ver Detalles" />
+
+    <ImageView
+        android:id="@+id/fotoact"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/fotobar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/actparis" />
+
+    <TextView
+        android:id="@+id/textoInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fotoact"
+        android:layout_alignTop="@id/fotoact"
+        android:layout_marginStart="8dp"
+        android:text="Subida a Torre Eifel\nRecorrido Guiado\nValoracion:★★★★★"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/botonInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotoact"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="-40dp"
+        android:text="Ver Detalles" />
+
+    <ImageView
+        android:id="@+id/fotoact1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/fotoact"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/act1paris" />
+
+    <TextView
+        android:id="@+id/textoInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fotoact1"
+        android:layout_alignTop="@id/fotoact1"
+        android:layout_marginStart="8dp"
+        android:text="Entrada a Museo\nRecorrido Guiado\nValoracion:★★★★★"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/botonInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotoact1"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="-40dp"
+        android:text="Ver Detalles" />
+</RelativeLayout>
+</ScrollView>

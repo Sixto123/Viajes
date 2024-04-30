@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Encabezado -->
+        <TextView
+            android:id="@+id/encabezado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Que te gustaria buscar?"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- Botones circulares con iconos -->
+        <LinearLayout
+            android:id="@+id/botones_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/encabezado"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <!-- Botón Home -->
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/btnHome"
+                android:background="@drawable/circle_button_background"
+                android:src="@drawable/home"
+                android:scaleType="fitXY"
+                android:padding="16dp"
+                android:layout_marginEnd="30dp"/>
+
+            <!-- Botón Hoteles -->
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/btnHoteles"
+                android:background="@drawable/circle_button_background"
+                android:src="@drawable/hotel"
+                android:scaleType="fitXY"
+                android:padding="16dp"
+                android:layout_marginEnd="30dp"/>
+
+            <!-- Botón Lugares -->
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/btnLugares"
+                android:background="@drawable/circle_button_background"
+                android:src="@drawable/lugar"
+                android:scaleType="fitXY"
+                android:padding="16dp"
+                android:layout_marginEnd="30dp"/>
+
+            <!-- Botón Vuelos -->
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/btnVuelos"
+                android:background="@drawable/circle_button_background"
+                android:src="@drawable/vuelo"
+                android:scaleType="fitXY"
+                android:padding="16dp"
+                android:layout_marginEnd="3dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/vuelo1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/vuelo1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="250dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/vuelo1Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:Aeromexico\nDestino:Cancun,Mexico\nHorario:7:00pm-10:00pm\nValoracion: ★★★★★"
+            android:layout_toEndOf="@id/vuelo1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="250dp"/>
+
+        <Button
+            android:id="@+id/vuelo1Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="330dp"
+            android:layout_toEndOf="@id/vuelo2"
+            android:text="+informacion" />
+
+
+        <ImageView
+            android:id="@+id/vuelo2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="400dp"
+            android:src="@drawable/vuelo2"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/vuelo2Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:Aeromar\nDestino:Goa,India\nHorario:5:30pm-8:00pm\nValoracion: ★★★★"
+            android:layout_toEndOf="@id/vuelo1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="400dp"/>
+
+        <Button
+            android:id="@+id/vuelo2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="480dp"
+            android:layout_toEndOf="@id/vuelo2"
+            android:text="+informacion" />
+
+        <ImageView
+            android:id="@+id/vuelo3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="550dp"
+            android:src="@drawable/vuelo3"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/vuelo3Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:Volaris\nDestino:Madrid,España\nHorario:6:30am-9:00am\nValoracion: ★★★★★"
+            android:layout_toEndOf="@id/vuelo1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="550dp"/>
+
+        <Button
+            android:id="@+id/vuelo3Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="630dp"
+            android:layout_toEndOf="@id/vuelo3"
+            android:text="+informacion" />
+
+        <ImageView
+            android:id="@+id/vuelo4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="700dp"
+            android:src="@drawable/vuelo4"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/vuelo4Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:Viva Aerobus\nDestino:Hong Kong,China\nHorario:3:00pm-5:00pm\nValoracion: ★★★★★"
+            android:layout_toEndOf="@id/vuelo1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="700dp"/>
+
+        <Button
+            android:id="@+id/vuelo4Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="780dp"
+            android:layout_toEndOf="@id/vuelo4"
+            android:text="+informacion" />
+
+        <ImageView
+            android:id="@+id/vuelo5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="850dp"
+            android:src="@drawable/vuelo5"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/vuelo5Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:Magnicharters\nDestino:Monterrey,Mexico\nHorario:3:00am-3:00am\nValoracion: ★★★★"
+            android:layout_toEndOf="@id/vuelo1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="850dp"/>
+
+        <Button
+            android:id="@+id/vuelo5Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="930dp"
+            android:layout_toEndOf="@id/vuelo5"
+            android:text="+informacion" />
+
+    </RelativeLayout>
+</ScrollView>
